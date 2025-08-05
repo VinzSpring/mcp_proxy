@@ -1,0 +1,19 @@
+# Include important documentation and config files
+include README.md
+include readme.md
+include LICENSE
+include *.txt
+include *.md
+
+# Include examples
+include example_library_usage.py
+include test.py
+
+# Exclude test and development files
+exclude .gitignore
+exclude *.pyc
+exclude *~
+prune __pycache__
+prune .git
+prune .pytest_cache
+prune *.egg-info

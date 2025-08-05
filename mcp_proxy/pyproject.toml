@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-proxy"
+version = "1.0.0"
+description = "A reusable module for managing multiple MCP servers with access control and automatic configuration generation"
+readme = "readme.md"
+license = {text = "MIT"}
+authors = [
+    {name = "MCP Proxy Contributors"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Networking",
+    "Topic :: Internet :: Proxy Servers",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[project.scripts]
+mcp-proxy = "mcp_proxy.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/mcp-proxy"
+Repository = "https://github.com/yourusername/mcp-proxy"
+Issues = "https://github.com/yourusername/mcp-proxy/issues"
+Documentation = "https://github.com/yourusername/mcp-proxy#readme"
+
+[tool.setuptools]
+packages = ["mcp_proxy", "mcp_proxy.config_generators"]

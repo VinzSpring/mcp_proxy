@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "/opt/homebrew/bin/socat",
+      "args": [
+        "STDIO",
+        "UNIX-CONNECT:/var/folders/65/4t73y6xd04n4q_kgtt9nzc9h0000gn/T/comprehensive-demo_n0d3myf2/playwright.sock"
+      ]
+    },
+    "math-server": {
+      "command": "/opt/homebrew/bin/socat",
+      "args": [
+        "STDIO",
+        "UNIX-CONNECT:/var/folders/65/4t73y6xd04n4q_kgtt9nzc9h0000gn/T/comprehensive-demo_n0d3myf2/math-server.sock"
+      ]
+    },
+    "text-server": {
+      "command": "/opt/homebrew/bin/socat",
+      "args": [
+        "STDIO",
+        "UNIX-CONNECT:/var/folders/65/4t73y6xd04n4q_kgtt9nzc9h0000gn/T/comprehensive-demo_n0d3myf2/text-server.sock"
+      ]
+    },
+    "utility-server": {
+      "command": "/opt/homebrew/bin/socat",
+      "args": [
+        "STDIO",
+        "UNIX-CONNECT:/var/folders/65/4t73y6xd04n4q_kgtt9nzc9h0000gn/T/comprehensive-demo_n0d3myf2/utility-server.sock"
+      ]
+    }
+  }
+}
